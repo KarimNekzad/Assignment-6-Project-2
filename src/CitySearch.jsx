@@ -16,7 +16,7 @@ class CitySearch extends Component {
   }
 
   fetchZip() {
-    let link = "http://ctp-zip-api.herokuapp.com/city/" + this.state.city
+    let link = "https://ctp-zip-api.herokuapp.com/city/" + this.state.city
     axios
       .get(link)
       .then((response) => {
